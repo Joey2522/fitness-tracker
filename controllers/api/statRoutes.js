@@ -1,9 +1,8 @@
 const router = require('express').Router();
-const withAuth = require('../utils/auth');
-
+const Stats = require('../../models/stats');
 
 router.get('/', async (req, res) => {
-        res.render('homepage', { users });
-});
+    res.status(200).json({ message: '/ working' });
+})
 
 module.exports = router;
