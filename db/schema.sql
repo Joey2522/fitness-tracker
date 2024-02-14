@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS running_db;
+DROP DATABASE IF EXISTS runTracker_db;
 
-CREATE DATABASE running_db;
+CREATE DATABASE runTracker_db;
