@@ -11,5 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('createAcctBtn').addEventListener('click', function(){
         window.location.href = "../views/create-acct.handlebars";
         console.log("Create account button clicked");
+
     });
 });
