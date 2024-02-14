@@ -3,5 +3,5 @@ const withAuth = require('../utils/auth');
 
 
 router.get('/', async (req, res) => {
-        res.render('homepage', { users });
+        res.render('../../views/index.handlebars', { users });
 });
