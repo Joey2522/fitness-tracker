@@ -11,4 +11,4 @@ CREATE TABLE (
     , email VARCHAR(99) NOT NULL
     , password VARCHAR(30) NOT NULL
     , PRIMARY KEY (id)
-)
+) 
