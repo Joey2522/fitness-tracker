@@ -1,9 +1,11 @@
-import { getUserIdAfterLogin } from ''; // add file path
+//purpose: to fetch and display user data from the database
+ 
 
-document.addEventListener('DOMContentLoaded', () => {
+
+document.addEventListener('DOMContentLoaded', () => { 
     async function fetchUserData(userId) {
         try {
-            const response = await fetch();  // add file path/db and {userId}
+            const response = await fetch("./contollers/api/ " ); 
             const userData = await response.json();
             return userData;
         } catch (error) {
@@ -11,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return [];
         }
     }
-
+    
     function renderRunCards(userData) {
         const runListContainer = document.getElementById('runList');
         runListContainer.innerHTML = '';
