@@ -8,7 +8,6 @@ signinBtn.onclick = function() {
     title.innerHTML = "Sign In";
     signupBtn.classList.add("disable");
     signinBtn.classList.remove("disable");
-
 };
 
 signupBtn.onclick = function() {
@@ -16,22 +15,4 @@ signupBtn.onclick = function() {
     title.innerHTML = "Sign Up";
     signupBtn.classList.remove("disable");
     signinBtn.classList.add("disable");
-
 };
-
-//even listeners for login button
-// document.addEventListener('DOMContentLoaded', () => {
-//     document.getElementById('loginBtn').addEventListener('click', function(){
-//         window.location.href = "../views/login.handlebars";
-//         console.log("Login button clicked");
-//     });
-// });
-
-//even listeners for create account button
-// document.addEventListener('DOMContentLoaded', () => {
-//     document.getElementById('createAcctBtn').addEventListener('click', function(){
-//         window.location.href = "../views/create-acct.handlebars";
-//         console.log("Create account button clicked");
-
-//     });
-// });
