@@ -13,13 +13,12 @@
 ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
 ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
 
-## Description
 
 ## Description:
 Run Tracker is a website that allows runners to input their current run statistics to keep track of and track progress through past runs. 
 
+
 ## Table of Contents:
-- [Overview](#Overview)
 - [The Challenge](#The-Challenge)
 - [Installation Process](#Installation-Process)
 - [Usage Information](#Usage-Information)
@@ -27,77 +26,97 @@ Run Tracker is a website that allows runners to input their current run statisti
 - [Demonstration Video](#YouTube-Walkthrough-Video)
 - [Screenshots](#Screenshots)
 - [Built With](#Built-With)
-- [What I Learned](#What-I-Learned)
+- [Continued Development](#Continued-Development)
 - [License](#License)
-- [Author](#Author)
+- [Authors](#Authors)
 
-# Overview
-
-## User Story
-```md
-AS A runner
-I WANT to be able to store my current run stats and view my previous run stats
-SO THAT I can track my run progress
-```
-
-## Acceptance Criteria
-```md
-GIVEN a login page that accepts user input I can either create an account of log into an existing account
-WHEN I log into the website
-THEN I am presented with the following options: 
-```
 
 ## The Challenge:
 Working with your team, you’ll conceive and execute a design that solves a real-world problem. In creating a collaborative full-stack application, combine a robust back end—with servers, databases, and user authentication—to an intuitive front end.
 
 
 ## Installation Process
-1. Clone the repository: [fitness-tracker](https://github.com/Joey2522/fitness-tracker)
-2. Using your terminal install the following: 
-- Node.JS [Version 20.10.0](https://nodejs.org/en/blog/release/v20.10.0)
-- MySQL2 [Version 3.9.0 for macos14.0 on arm64](https://www.npmjs.com/package/mysql2)
-- Inquirer.js: [Version 8.2.6](https://www.npmjs.com/package/inquirer/v/8.2.6)
-3. Open the cloned repository in any source code editor.
-4. Open the integrated terminal for the document and complete the respective installation guides provided above to ensure the cloned documentation will operate properly.
+
+PRE-Requisites: 
+- you must have node.js version 16.* installed on your computer prior to proceeding
+- you must have MySQL/MariaDB installed on your computer prior to proceeding
+
+### Database setup
+This must be executed before launching the application
+1. Log into your MySQL/MariaDB server.
+2. Execute the following command:
+```md
+    mysql> source path_to_schema.sql/schema.sql
+```
+3. Verify the database creation by running the command. The database should be listed in the results
+```md
+    mysql> show databases;
+```
+
+### Application launch:
+1. Download the source code
+2. Navigate to the folder containing the package.json file
+3. Run the following commands
+```md
+    $ npm install
+    $ node ./seed/seeds.js
+    $ npm start
+```
+
 
 ## Usage Instructions
-1. Open the cloned repository in any source code editor.
-2. Open your editors integrated terminal.
-3. Enter “node server.js” in the command-line.
-4. The user will be presented with a set of choices within the command-line interface.The user will then use the 'UP' and 'DOWN' arrow keys to navigate the command-line and make the desired selection.
-5. Continue to use the command-line until your task is complete.
-6. For detailed walkthrough see YouTube video walkthrough link below.
+1. Open the application
+2. Log in or create an account
+3. Enter new running stats
+4. View run history to the right of the page
+
+The demonstration video provides information on the application usage.
+
 
 ## Repository URL:
-[Repository URL Link:](https://github.com/Joey2522/Challenge-12-SQL-Employee-Tracker)
+[Repository URL Link:](https://github.com/Joey2522/fitness-tracker)
+
 
 ## YouTube Walkthrough Video:
-[Click Here to Watch](https://youtu.be/yiZEIMX5REE)
+[Click Here to Watch](URL)
 
 ## Screenshots:
-### Figure 1. Command line application
-![](./assets/Screenshot%202024-01-27%20at%208.18.31 AM.png) 
-### Figure 2. Command line application
-![](./assets/Screenshot%202024-01-27%20at%208.19.02 AM.png)
-### Figure 3. Command line application
-![](./assets/Screenshot%202024-01-27%20at%208.19.20 AM.png)
+### Figure 1. Login Page
+![]() 
+### Figure 2. Enter Run Stats
+![]()
+### Figure 3. View Run History
+![]()
 
 
 ## Built With
-- Dynamic JavaScript
-- Node.JS [Version 20.10.0](https://nodejs.org/en/blog/release/v20.10.0)
-- MySQL2 [Version 3.9.0 for macos14.0 on arm64](https://www.npmjs.com/package/mysql2)
-- Inquirer.js: [Version 8.2.6](https://www.npmjs.com/package/inquirer/v/8.2.6)
-- License Badge: [Shields.io](https://shields.io/)
-- Visual Studio Code: [Website](https://code.visualstudio.com/)
+### Dependencies:
+1. Node.bcrypt.js: [2.4.3](https://www.npmjs.com/package/bcrypt/v/2.4.3)
+2. Nodemon: [3.0.3](https://www.npmjs.com/package/nodemon/v/3.0.3)
+3. Connect Session Store using Sequelize: [7.1.7](https://www.npmjs.com/package/connect-session-sequelize)
+4. Day.js: [](https://www.npmjs.com/package/dayjs)
+5. Dotenv: [16.4.4](https://www.npmjs.com/package/dotenv)
+6. Express: [4.18.2](https://www.npmjs.com/package/express/v/4.18.2)
+7. Express Handlebars: [7.1.2](https://www.npmjs.com/package/express-handlebars/v/7.1.2)
+8. Express-session: [1.18.0](https://www.npmjs.com/package/express-session/v/1.18.0)
+9. Handlebars.js: [4.7.8](https://www.npmjs.com/package/handlebars/v/4.7.8)
+10. Node MySQL2: [3.9.1](https://www.npmjs.com/package/mysql2/v/3.9.1)
+11. Sequelize: [6.36.0](https://www.npmjs.com/package/sequelize/v/6.36.0)
+12. Node hbs: [4.2.0](https://www.npmjs.com/package/hbs/v/4.2.0)
 
-## What I Learned
-- How to build a command-line application from scratch to manage an employee database, using Node.js, Inquirer, and MySQL.
+
+## Continued Development
+- Add a working password privacy reveal/hide "eye" icon.
+- 
+- 
+- 
+
 
 ## License & Copyright ©
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [Open Source Initiative Link](https://opensource.org/licenses/MIT)
 
-### Copyright © 2024 Joseph Porter
+
+### Copyright © 2024
 ```md
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -119,12 +138,15 @@ SOFTWARE.
 ```
 
   
-## Author
+## Authors
+Follow our team on Github!
+- [Joey2522](https://github.com/Joey2522)
+- 
+- 
+-  
 
-Follow me on Github at [Joey2522](https://github.com/Joey2522)! 
 
-
-© 2024 [Joey2522](https://github.com/Joey2522). Confidential and Proprietary. All Rights Reserved.
+© 2024 [Joey2522](https://github.com/Joey2522), , , , Confidential and Proprietary. All Rights Reserved.
 
 
 
