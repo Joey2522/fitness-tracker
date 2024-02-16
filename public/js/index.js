@@ -3,6 +3,7 @@ let signinBtn = document.getElementById('signinBtn');
 let firstName = document.getElementById('firstName');
 let lastName = document.getElementById('lastName');
 let title = document.getElementById('title');
+let submitBtn = document.getElementById('submitBtn');
 
 signinBtn.onclick = function() {
     firstName.style.maxHeight = "0";
@@ -18,4 +19,9 @@ signupBtn.onclick = function() {
     title.innerHTML = "Sign Up";
     signupBtn.classList.remove("disable");
     signinBtn.classList.add("disable");
+};
+
+submitBtn.onclick = () => {
+    //this needs changing to running.handlebars 
+    window.location.href = "index2.html";
 };
