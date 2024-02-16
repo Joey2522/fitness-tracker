@@ -3,7 +3,7 @@ const withAuth = require('../utils/auth');
 
 
 router.get('/', async (req, res) => {
-        res.render('../../views/index.handlebars', { users });
+        res.status(200).json({ message: '/ working' });
 });
 
 module.exports = router;
