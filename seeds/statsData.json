@@ -1,19 +1,12 @@
-
-const { Stats } = require('../models');
-
-const statsData = [
+[
     {
-        distance: '3 miles',
-        duration: '0:45'
-        feeling: 'worn out',
+        "distance": "3 miles",
+        "duration": "0:45",
+        "feeling": "worn out"
     },
     {
-        distance: '2.6 miles',
-        duration: '0:41'
-        feeling: 'tired',
-    },
-];
-
-const seedStats = () => Stats.bulkCreate(statsData);
-
-module.exports = seedStats;
+        "distance": "2.6 miles",
+        "duration": "0:41",
+        "feeling": "tired"
+    }
+]

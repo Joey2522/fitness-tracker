@@ -12,11 +12,11 @@ Stats.init(
       autoIncrement: true,
     },
     distance: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     duration: {
-      type: DataTypes.TIME,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     date: {
@@ -33,6 +33,13 @@ Stats.init(
       type: DataTypes.STRING,
       allowNull: true,
     },
+    runner_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'User',
+        key: 'id',
+      },
+    }
   },
   {
     sequelize,
