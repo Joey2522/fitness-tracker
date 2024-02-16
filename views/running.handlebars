@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/running.css">
+    <script src="https://kit.fontawesome.com/32f9534a96.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <title>User Runs - Run Tracker</title>
     <link rel="stylesheet" href="public\css\running.css">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
 </head>
 
 <body>
@@ -16,31 +21,23 @@
 
     <main>
         <div id="runList">
-            {{!-- Handlebars placeholders for run cards --}}
-        </div>
-
-        <div id="runDetails">
-            {{!-- Handlebars placeholders for run details --}}
-        </div>
-    </main>
-
-    
-
-    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script id="runListTemplate" type="text/x-handlebars-template">
-        {{!-- Handlebars template for run cards --}}
         {{#each runs}}
             <div class="run-card" onclick="showRunDetails('{{info}}')">
                 <h3>{{info}}</h3>
             </div>
         {{/each}}
     </script>
+        </div>
 
-    <script id="runDetailsTemplate" type="text/x-handlebars-template">
-        {{!-- Handlebars template for run details --}}
+        <div id="runDetails">
+          <script id="runDetailsTemplate" type="text/x-handlebars-template">
         <h2>{{selectedRun.info}}</h2>
         <p>{{selectedRun.details}}</p>
     </script>
+        </div>
+    </main>
+
 
     <script src="./js/runningData.js"></script>
 </body>
