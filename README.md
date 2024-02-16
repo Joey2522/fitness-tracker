@@ -141,12 +141,12 @@ SOFTWARE.
 ## Authors
 Follow our team on Github!
 - [Joey2522](https://github.com/Joey2522)
-- 
-- 
--  
+- [kacieo](https://github.com/kacieo)
+- [aaron-ross-sanchez](https://github.com/aaron-ross-sanchez)
+- [jackrileynin](https://github.com/jackrileynin)
 
 
-© 2024 [Joey2522](https://github.com/Joey2522), , , , Confidential and Proprietary. All Rights Reserved.
+© 2024 [Joey2522](https://github.com/Joey2522), [kacieo](https://github.com/kacieo), [aaron-ross-sanchez](https://github.com/aaron-ross-sanchez), [jackrileynin](https://github.com/jackrileynin), Confidential and Proprietary. All Rights Reserved.
 
 
 
