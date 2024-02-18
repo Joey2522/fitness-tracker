@@ -19,7 +19,7 @@ main {
 }
 
 #runList,
-#runDetails {
+#runDetails,{
     width: 45%;
     background-color: #fff;
     padding: 20px;

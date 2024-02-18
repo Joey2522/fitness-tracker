@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+    <script src="../models/stats.js"></script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/running.css">
+    <script src="https://kit.fontawesome.com/32f9534a96.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href = "https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href = "./css/running.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    
+    <title>User Runs - Run Tracker</title>
+    <title>Stats Page</title>
+</head>
+<body>
+    <div id="runList" class="">
+    //enter script for user data
+    <script type="text/x-handlebars-template">
+    <h1>{{first_name}} Run Stats</h1>
+    <ul>
+        //enter script for user run data
+        <script src="../models/stats.js"></script>
+        {{#each stats}}
+            <li>
+                <p>Distance: {{this.distance}}</p>
+                <p>Duration: {{this.duration}}</p>
+                <p>Date: {{this.date}}</p>
+                <p>Time: {{this.time}}</p>
+                <p>Feeling: {{this.feeling}}</p>
+            </li>
+        {{/each}}
+        </script>
+    </ul>
+    </div>
+
+</body>
+</html>
+
+</html>
