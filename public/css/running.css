@@ -140,6 +140,13 @@ input {
     padding: 3px;
 }
 
+.historyBlock li{
+    list-style-type: none;
+    margin-left: 10px;
+    padding: 3px;
+    font-size: 12px;
+}
+
 h4 {
     padding: 3px;
 }
