@@ -3,7 +3,7 @@ const withAuth = require('../utils/auth');
 
 
 router.get('/', async (req, res) => {
-        res.status(200).json({ message: '/ working' });
+        res.render('layouts/main');
 });
 
 module.exports = router;
