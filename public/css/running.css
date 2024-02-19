@@ -1,4 +1,114 @@
-body {
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container2 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Dark\ Shoes.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+header h1 {  
+    font-family: "Monoton", sans-serif;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px #06C9B7;
+    color: #3c00a0;
+    text-align: center;
+    z-index: 1;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.card-title {  
+    font-family: "Monoton", sans-serif;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px #06C9B7;
+    color: #3c00a0;
+    text-align: center;
+    padding-top: 40px;
+    z-index: 1;
+}
+
+.statsCard {
+    background: #06C9B7;
+    color:#3c00a0;
+    height: 300px;
+    margin: 10px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px #FEF410;
+    margin: 10px;
+    padding: 12px;
+}
+
+.historyCard{
+    background :#06C9B7;
+    color:#3c00a0;
+    height: 300px;
+    margin: 10px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px #FEF410;
+    margin: 10px;
+    padding: 12px;
+    overflow: scroll;
+}
+
+input {
+    width: 100%;
+    background: rgb(227, 223, 190);
+    border: 0;
+    outline: 0;
+    padding: 0px 5px;
+    border-radius: 3px;
+
+}
+
+.input-field i {
+    margin-left: 5px;
+    color:  #FEF410;
+}
+
+.submitBtn-field {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+}
+
+.submitBtn-field button {
+    flex-basis: 48%;
+    background: #FEF410;
+    color: black;
+    height: 40px;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 0 15 0 15;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.submitBtn-field button:hover {
+    background: #3c00a0;
+    color: whitesmoke;
+}
+
+.submitBtn-field button:active {
+    background-color: #06C9B7;
+    box-shadow: 0 5px #000000;
+    transform: translateY(4px);
+}
+
+/* body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -43,5 +153,5 @@ main {
 
 #runDetails {
     border: 1px solid #ddd;
-}
+} */
 
