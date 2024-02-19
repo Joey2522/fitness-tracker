@@ -52,18 +52,6 @@ header h1::after {
     z-index: 1;
 }
 
-.card-container::after {
-    content: '';
-    width: 30px;
-    height: 4px;
-    border-radius: 3px;
-    background: #FEF410;
-    position: absolute;
-    bottom: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 .statsCard {
     background: #06C9B7;
     color:#3c00a0;
