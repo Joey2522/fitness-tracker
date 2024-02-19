@@ -19,8 +19,21 @@ header h1 {
     font-size: 25px;
     text-shadow: 2px 2px 2px #06C9B7;
     color: #3c00a0;
+    padding: 10px;
     text-align: center;
-    z-index: 1;
+    /* border-bottom: solid 3px #06C9B7; */
+}
+
+header h1::after {
+    content: '';
+    width: 400px;
+    height: 4px;
+    border-radius: 3px;
+    background: #FEF410;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .card-container {
@@ -37,6 +50,18 @@ header h1 {
     text-align: center;
     padding-top: 40px;
     z-index: 1;
+}
+
+.card-container::after {
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #FEF410;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .statsCard {
@@ -106,6 +131,17 @@ input {
     background-color: #06C9B7;
     box-shadow: 0 5px #000000;
     transform: translateY(4px);
+}
+
+.historyBlock {
+    list-style-type: none;
+    border: solid 1px black;
+    margin-left: 10px;
+    padding: 3px;
+}
+
+h4 {
+    padding: 3px;
 }
 
 /* body {
