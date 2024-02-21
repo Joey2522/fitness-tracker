@@ -7,4 +7,8 @@ router.get('/', async (req, res) => {
 });
 
 
+router.get('/running', (req, res) => {
+        res.render('running');
+});
+
 module.exports = router;
