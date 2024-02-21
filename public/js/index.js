@@ -41,7 +41,7 @@ let password = '';
 
 
 const submitForm = async (event) => {
-    console.log('Submit fucntion activated');
+    console.log('Submit function activated');
     
     event.preventDefault();
   
