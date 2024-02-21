@@ -1,0 +1,11 @@
+DONE
+    Connect the Sign Up Button to the router.post('/api/users/')
+    Check to see if it added the users
+
+
+Connect the Sign In Button to the router.get('/api/users/')
+
+Add a withAuth function
+
+Add 0Auth2.0?
+

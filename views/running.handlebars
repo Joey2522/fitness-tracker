@@ -1,20 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/running.css">
-    <script src="https://kit.fontawesome.com/32f9534a96.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
-
-    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-    
-    <title>Run Stats - Run Tracker</title>
-
-</head>
-
-<body>
     <div class="container2">
     <header class="header">
         <h1>Get Running, {{first_name}}!</h1>
@@ -88,6 +71,45 @@
 
     <script src="../models/stats.js"></script>
     <script src="./js/runningData.js"></script>
-</body>
 
-</html>
+
+
+
+
+
+{{!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/running.css">
+    <script src="https://kit.fontawesome.com/32f9534a96.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link rel="stylesheet" href="./css/running.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    
+    <title>User Runs - Run Tracker</title>
+</head>
+<body>
+    <div id="runList" class="runList">
+        <script src="../models/users.js"></script>
+        <h1>{{first_name}} Run Stats</h1>
+        <ul>
+            <script src="../models/stats.js"></script>
+            {{#each stats}}
+                <li>
+                    <p>Distance: {{this.distance}}</p>
+                    <p>Duration: {{this.duration}}</p>
+                    <p>Date: {{this.date}}</p>
+                    <p>Time: {{this.time}}</p>
+                    <p>Feeling: {{this.feeling}}</p>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <script src="../models/stats.js"></script>
+</body>
+</html> --}}
