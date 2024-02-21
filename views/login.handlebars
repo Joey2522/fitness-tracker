@@ -1,22 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="https://kit.fontawesome.com/32f9534a96.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
-    <title>Run Tracker</title>
-    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-</head>
 <body>
-    {{{body}}}
+    <div class="container">
+        <h1 class="welcome">Welcome To<br>Run Tracker</h1>
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+                <form>
+                    <div class="input-group">
+                        <div class="input-field" id="firstName">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" placeholder="First Name">
+                        </div>
+                        <div class="input-field" id="lastName">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" placeholder="Last Name">
+                        </div>
+                        <div class="input-field" id="email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" placeholder="Email">
+                        </div>
+                        <div class="input-field" id="password">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="btn-field">
+                        <button type="button" id="signupBtn">Sign Up</button>
+                        <button type="button" id="signinBtn" class="disable">Sign In</button>
+                    </div>
+                    <div class="submitBtn-field">
+                        <button type="button" id="submitBtn">Submit</button>
+                    </div>
+                </form>
+        </div>
+    </div>
 
-        
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-{{! <script src="./js/index.js"></script> }}
+    <script src="./js/index.js"></script>
     <script src="../views/index.handlebars"></script>
-
 </body>
-</html>
