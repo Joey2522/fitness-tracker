@@ -110,15 +110,6 @@ input {
     border-radius: 3px;
 }
 
-/* input::placeholder {
-    width: 100%;
-    background: rgb(227, 223, 190);
-    height: 90px;
-    border: 0;
-    outline: 0;
-    font-size: 50px;
-} */
-
 .input-field i {
     margin-left: 5px;
     color:  #3c00a0;
