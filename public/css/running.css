@@ -96,6 +96,7 @@ hr {
 
 .input-field {
     padding: 35px 0px;
+    box-shadow: 2px 2px 2px #FEF410;
 }
 
 input {
@@ -156,6 +157,7 @@ input {
     padding: 3px;
     border-radius: 3px;
     background: rgb(227, 223, 190);
+    box-shadow: 2px 2px 2px #FEF410;
 }
 
 .historyBlock li{
