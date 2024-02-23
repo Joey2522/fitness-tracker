@@ -105,16 +105,29 @@ input {
     margin: 0px;
     box-sizing: border-box;
     background: rgb(227, 223, 190);
+    /* background: #808080; */
     border: 0;
     outline: 0;
     font-size: 40px;
     border-radius: 3px;
 }
 
+input::placeholder {
+    padding-left: 10px;
+    color: #3c00a0;
+}
+
+#smileyFace {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
 .input-field i {
     margin-left: 5px;
     color:  #3c00a0;
     font-size: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .submitBtn-field {
@@ -131,9 +144,7 @@ input {
     height: 60px;
     font-size: 40px;
     border-radius: 25px;
-    margin-top: 0px;
-    margin-bottom: 100px;
-    /* padding: 0 15 0 15; */
+    margin-top: -50px;
     border: 0;
     outline: 0;
     cursor: pointer;
@@ -157,6 +168,7 @@ input {
     padding: 3px;
     border-radius: 3px;
     background: rgb(227, 223, 190);
+    /* background: #808080; */
     box-shadow: 2px 2px 2px #FEF410;
 }
 

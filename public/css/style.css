@@ -37,7 +37,8 @@
     top: 50%;
     left: 28%;
     transform: translate(-50%, -50%);
-    background-color: whitesmoke;
+    background-color: #06C9B7;
+    box-shadow: 2px 2px 2px #FEF410;
     padding: 10px;
     text-align: center;
     border-radius: 3px;
@@ -135,7 +136,7 @@ input {
 }
 
 .submitBtn-field button:hover {
-    background: #06C9B7;
+    background: #3c00a0;
     color: whitesmoke;
 }
 
