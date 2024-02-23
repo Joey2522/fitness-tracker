@@ -89,6 +89,7 @@ hr {
     box-shadow: 2px 2px 2px #FEF410;
     margin: 40px 20px 20px 20px;
     padding: 12px;
+    margin-right: 5px;
     overflow: scroll;
     margin-left: 80px;
     font-size: 20px;
@@ -104,8 +105,8 @@ input {
     padding: 40px 0px;
     margin: 0px;
     box-sizing: border-box;
-    background: rgb(227, 223, 190);
-    /* background: #808080; */
+    /* background: rgb(227, 223, 190); */
+    background: #93B7BE;
     border: 0;
     outline: 0;
     font-size: 40px;
@@ -167,8 +168,8 @@ input::placeholder {
     margin-left: 10px;
     padding: 3px;
     border-radius: 3px;
-    background: rgb(227, 223, 190);
-    /* background: #808080; */
+    /* background: rgb(227, 223, 190); */
+    background: #93B7BE;
     box-shadow: 2px 2px 2px #FEF410;
 }
 
