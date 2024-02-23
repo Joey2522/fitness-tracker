@@ -2,4 +2,4 @@ main
 .DS_Store
 .env
 main
-node_modules/
+node_modules

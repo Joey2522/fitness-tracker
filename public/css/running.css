@@ -16,7 +16,7 @@
 
 header h1 {  
     font-family: "Monoton", sans-serif;
-    font-size: 25px;
+    font-size: 75px;
     text-shadow: 2px 2px 2px #06C9B7;
     color: #3c00a0;
     padding: 10px;
@@ -26,85 +26,126 @@ header h1 {
 
 header h1::after {
     content: '';
-    width: 400px;
-    height: 4px;
+    width: 900px;
+    height: 5px;
     border-radius: 3px;
     background: #FEF410;
     position: absolute;
-    top: 60px;
+    top: 140px;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .card-container {
     display: flex;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 
-.card-title {  
+.card-title-stats {  
     font-family: "Monoton", sans-serif;
-    font-size: 20px;
+    font-size: 60px;
     text-shadow: 2px 2px 2px #06C9B7;
     color: #3c00a0;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 65px;
+    margin-right: 50px;
+    z-index: 1;
+}
+.card-title-history {  
+    font-family: "Monoton", sans-serif;
+    font-size: 60px;
+    text-shadow: 2px 2px 2px #06C9B7;
+    color: #3c00a0;
+    text-align: center;
+    padding-top: 65px;
+    margin-left: 78px;
     z-index: 1;
 }
 
 .statsCard {
     background: #06C9B7;
     color:#3c00a0;
-    height: 300px;
+    height: 500px;
     margin: 10px;
     border-radius: 3px;
     box-shadow: 2px 2px 2px #FEF410;
-    margin: 10px;
-    padding: 12px;
+    margin: 40px 20px 20px 20px;
+    padding: 30px;
+    margin-right: 80px;
+}
+
+hr {
+    border: 3px solid #FEF410;
+    border-radius: 3px;
+    margin-top: 10px;
 }
 
 .historyCard{
     background :#06C9B7;
     color:#3c00a0;
-    height: 300px;
+    height: 500px;
     margin: 10px;
     border-radius: 3px;
     box-shadow: 2px 2px 2px #FEF410;
-    margin: 10px;
+    margin: 40px 20px 20px 20px;
     padding: 12px;
+    margin-right: 5px;
     overflow: scroll;
+    margin-left: 80px;
+    font-size: 20px;
+}
+
+.input-field {
+    padding: 35px 0px;
+    box-shadow: 2px 2px 2px #FEF410;
 }
 
 input {
     width: 100%;
-    background: rgb(227, 223, 190);
+    padding: 40px 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /* background: rgb(227, 223, 190); */
+    background: #93B7BE;
     border: 0;
     outline: 0;
-    padding: 0px 5px;
+    font-size: 40px;
     border-radius: 3px;
+}
 
+input::placeholder {
+    padding-left: 10px;
+    color: #3c00a0;
+}
+
+#smileyFace {
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 .input-field i {
     margin-left: 5px;
-    color:  #FEF410;
+    color:  #3c00a0;
+    font-size: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .submitBtn-field {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 12px;
+    padding-top: 100px;
 }
 
 .submitBtn-field button {
     flex-basis: 48%;
     background: #FEF410;
     color: black;
-    height: 40px;
-    border-radius: 20px;
-    margin: 15px;
-    padding: 0 15 0 15;
+    height: 60px;
+    font-size: 40px;
+    border-radius: 25px;
+    margin-top: -50px;
     border: 0;
     outline: 0;
     cursor: pointer;
@@ -126,63 +167,19 @@ input {
     border: solid 1px black;
     margin-left: 10px;
     padding: 3px;
+    border-radius: 3px;
+    /* background: rgb(227, 223, 190); */
+    background: #93B7BE;
+    box-shadow: 2px 2px 2px #FEF410;
 }
 
 .historyBlock li{
     list-style-type: none;
     margin-left: 10px;
     padding: 3px;
-    font-size: 12px;
+    font-size: 40px;
 }
 
 h4 {
     padding: 10px 0px 1px 0px;
 }
-
-/* body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-main {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-}
-
-#runList,
-#runDetails,{
-    width: 45%;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.run-card {
-    cursor: pointer;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    background-color: #f9f9f9;
-    transition: background-color 0.3s ease;
-}
-
-.run-card:hover {
-    background-color: #e0e0e0;
-}
-
-#runDetails {
-    border: 1px solid #ddd;
-} */
-

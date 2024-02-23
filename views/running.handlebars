@@ -8,7 +8,7 @@
         <div class="card-container">
 
             <div class="run-stats">
-                <h4 class="card-title">Current Run</h4>
+                <h4 class="card-title-stats">Current Run</h4>
 
                     <form class="runForm">
                         <div class="statsCard">
@@ -23,7 +23,7 @@
                                 id="durationText">
                             </div>
                             <div class="input-field" id="feelingInput">
-                                <i class="fa-solid fa-face-smile"></i>
+                                <i class="fa-solid fa-face-smile" id="smileyFace"></i>
                                 <input type="text" placeholder="How do you feel?" id="feelingText">
                             </div>
                             <div class="submitBtn-field">
@@ -34,10 +34,11 @@
                     </form>
 
             </div>
+            <hr>
 
 
             <div class="run-history">
-                <h4 class="card-title">Run History</h4>
+                <h4 class="card-title-history">Run History</h4>
                     <div class="historyCard">
                         
                         {{#each statsData}}
