@@ -2,11 +2,13 @@
     {
         "distance": "3 miles",
         "duration": "0:45",
-        "feeling": "worn out"
+        "feeling": "worn out",
+        "runner_id": 4
     },
     {
         "distance": "2.6 miles",
         "duration": "0:41",
-        "feeling": "tired"
+        "feeling": "tired",
+        "runner_id": 4
     }
 ]

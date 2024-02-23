@@ -6,105 +6,57 @@
         <h1>Get Running, {{first_name}}!</h1>
     </header>
         <div class="card-container">
+
             <div class="run-stats">
                 <h4 class="card-title">Current Run</h4>
-                    <div class="statsCard">
-                        <div class="input-field" id="distanceInput">
-                            <i class="fa-solid fa-person-running"></i>
-                            <input type="text" placeholder="Distance">
+
+                    <form class="runForm">
+                        <div class="statsCard">
+
+                            <div class="input-field" id="distanceInput">
+                                <i class="fa-solid fa-person-running"></i>
+                                <input type="text" placeholder="Distance" id="distanceText">
+                            </div>
+                            <div class="input-field" id="durationInput">
+                                <i class="fa-solid fa-stopwatch"></i>
+                                <input type="text" placeholder="Duration"
+                                id="durationText">
+                            </div>
+                            <div class="input-field" id="feelingInput">
+                                <i class="fa-solid fa-face-smile"></i>
+                                <input type="text" placeholder="How do you feel?" id="feelingText">
+                            </div>
+                            <div class="submitBtn-field">
+                                <button type="button" id="runSubmitBtn">Submit</button>
+                            </div>
+                            
                         </div>
-                        <div class="input-field" id="durationInput">
-                            <i class="fa-solid fa-stopwatch"></i>
-                            <input type="text" placeholder="Duration">
-                        </div>
-                        <div class="input-field" id="feelingInput">
-                            <i class="fa-solid fa-face-smile"></i>
-                            <input type="text" placeholder="How do you feel?">
-                        </div>
-                        <div class="submitBtn-field">
-                            <button type="button" id="submitBtn">Submit</button>
-                        </div>
-                    </div>
+                    </form>
+
             </div>
+
+
             <div class="run-history">
                 <h4 class="card-title">Run History</h4>
                     <div class="historyCard">
-                        <h4> Date & Time: {{stats.date}}, {{stats.time}}</h4>
-                        <ul class="historyBlock">
-                            <li> Distance: {{stats.distance}}</li>
-                            <li> Duration: {{stats.duration}}</li>
-                            <li> Feeling: {{stats.feeling}}</li>
-                        </ul>
-                        <h4> Date & Time: {{stats.date}}, {{stats.time}}</h4>
-                        <ul class="historyBlock">
-                            <li> Distance: {{stats.distance}}</li>
-                            <li> Duration: {{stats.duration}}</li>
-                            <li> Feeling: {{stats.feeling}}</li>
-                        </ul>
-                        <h4> Date & Time: {{stats.date}}, {{stats.time}}</h4>
-                        <ul class="historyBlock">
-                            <li> Distance: {{stats.distance}}</li>
-                            <li> Duration: {{stats.duration}}</li>
-                            <li> Feeling: {{stats.feeling}}</li>
-                        </ul>
-                        <h4> Date & Time: {{stats.date}}, {{stats.time}}</h4>
-                        <ul class="historyBlock">
-                            <li> Distance: {{stats.distance}}</li>
-                            <li> Duration: {{stats.duration}}</li>
-                            <li> Feeling: {{stats.feeling}}</li>
-                        </ul>
-                        <h4> Date & Time: {{stats.date}}, {{stats.time}}</h4>
-                        <ul class="historyBlock">
-                            <li> Distance: {{stats.distance}}</li>
-                            <li> Duration: {{stats.duration}}</li>
-                            <li> Feeling: {{stats.feeling}}</li>
-                        </ul>
+                        
+                        {{#each statsData}}
+                            <h4>Date & Time: {{this.dataValues.date}}, {{this.dataValues.time}}</h4>
+                            <ul class="historyBlock">
+                                <li>Distance: {{this.dataValues.distance}}</li>
+                                <li>Duration: {{this.dataValues.duration}}</li>
+                                <li>Feeling: {{this.dataValues.feeling}}</li>
+                            </ul>
+                        {{/each}}
+
                     </div>
             </div>
         </div>
     </div>
 
     <script src="../models/stats.js"></script>
-    <script src="./js/runningData.js"></script>
+    {{!-- <script src="../public/js/runningData.js"></script> --}}
+    <script src="./js/runForm.js"></script>
 
 
 
-
-
-
-{{!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/running.css">
-    <script src="https://kit.fontawesome.com/32f9534a96.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
-    <link rel="stylesheet" href="./css/running.css">
-
-    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-    
-    <title>User Runs - Run Tracker</title>
-</head>
-<body>
-    <div id="runList" class="runList">
-        <script src="../models/users.js"></script>
-        <h1>{{first_name}} Run Stats</h1>
-        <ul>
-            <script src="../models/stats.js"></script>
-            {{#each stats}}
-                <li>
-                    <p>Distance: {{this.distance}}</p>
-                    <p>Duration: {{this.duration}}</p>
-                    <p>Date: {{this.date}}</p>
-                    <p>Time: {{this.time}}</p>
-                    <p>Feeling: {{this.feeling}}</p>
-                </li>
-            {{/each}}
-        </ul>
-    </div>
-
-    <script src="../models/stats.js"></script>
-</body>
-</html> --}}

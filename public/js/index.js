@@ -1,5 +1,3 @@
-console.log('Hello')
-
 let signupBtn = document.getElementById('signupBtn');
 let signinBtn = document.getElementById('signinBtn');
 let firstNameBox = document.getElementById('firstNameBox');
@@ -75,7 +73,7 @@ const submitForm = async (event) => {
               headers: { 'Content-Type': 'application/json' },
             });
       
-            console.log(response);
+            console.log('Post API', response);
       
             if (response.ok) {
               document.location.replace('/running');
@@ -108,9 +106,6 @@ const submitForm = async (event) => {
             console.log('Error with the conditional signin statement');
         }
     };
-
-
-
 };
 
 submitBtn.onclick = (event) => {
