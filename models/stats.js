@@ -22,6 +22,7 @@ Stats.init(
     date: {
       type: DataTypes.DATEONLY,
       defaultValue: DataTypes.NOW,
+      
       allowNull: false,
     },
     time: {
