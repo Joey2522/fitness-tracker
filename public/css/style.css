@@ -155,16 +155,16 @@ input {
     }
   }
 
-  @media (max-width: 745px) {
-    .welcome {
-        top: 15%;
-        left: 50%;
-        font-size: 31px;
-    }
-    .form-box {
-        min-width: 400px;
-        max-height: 400px;
-        top: 50%;
-        left: 50%;
-    }
-  }
+@media (max-width: 745px) {
+.welcome {
+    top: 15%;
+    left: 50%;
+    font-size: 31px;
+}
+.form-box {
+    min-width: 400px;
+    max-height: 400px;
+    top: 50%;
+    left: 50%;
+}
+}
