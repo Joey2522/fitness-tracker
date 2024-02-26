@@ -1,5 +1,5 @@
-const User = require('./users');
-const Stats = require('./stats');
+const User = require('./Users');
+const Stats = require('./Stats');
 
 User.hasMany(Stats, {
     foreignKey: 'runner_id'
