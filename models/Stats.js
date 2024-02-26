@@ -46,7 +46,7 @@ Stats.init(
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Stats',
+    modelName: 'stats',
   }
 );
 
