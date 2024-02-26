@@ -23,6 +23,7 @@ Run Tracker is a website that allows runners to input their current run statisti
 - [Installation Process](#Installation-Process)
 - [Usage Information](#Usage-Information)
 - [Repository URL](#Repository-URL)
+- [Heroku Deployment URL](#Heroku-Deployment-URL)
 - [Demonstration Video](#YouTube-Walkthrough-Video)
 - [Screenshots](#Screenshots)
 - [Built With](#Built-With)
@@ -74,19 +75,23 @@ The demonstration video provides information on the application usage.
 
 
 ## Repository URL:
-[Repository URL Link:](https://github.com/Joey2522/fitness-tracker)
+[Click Here For Repository Link.](https://github.com/Joey2522/fitness-tracker)
 
+## Heroku Deployment URL:
+[CLick Here For Heroku Link.](https://run-tracker-aa4292a38872.herokuapp.com/)
 
 ## YouTube Walkthrough Video:
-[Click Here to Watch](URL)
+[Click Here to Watch.](URL)
 
 ## Screenshots:
 ### Figure 1. Login Page
-![]() 
+![](./assets/landing.png) 
+### Figure 2.  Home Page
+![](./assets/loggedin.png)
 ### Figure 2. Enter Run Stats
-![]()
+![](./assets/current.png)
 ### Figure 3. View Run History
-![]()
+![](./assets/history.png)
 
 
 ## Built With
@@ -106,10 +111,10 @@ The demonstration video provides information on the application usage.
 
 
 ## Continued Development
-- Add a working password privacy reveal/hide "eye" icon.
-- 
-- 
-- 
+- Implement responsive design to ensure a seamless transition across various devices.
+- Expand the range of tracked activities and exercises.
+- Integrate nutrition tracking features to help users maintain a holistic approach to health.
+- Provide access to wellness resources, including articles, recipes, and expert advice.
 
 
 ## License & Copyright ©
