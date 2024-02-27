@@ -24,7 +24,6 @@ Run Tracker is a website that allows runners to input their current run statisti
 - [Usage Information](#Usage-Information)
 - [Repository URL](#Repository-URL)
 - [Heroku Deployment URL](#Heroku-Deployment-URL)
-- [Demonstration Video](#YouTube-Walkthrough-Video)
 - [Screenshots](#Screenshots)
 - [Built With](#Built-With)
 - [Continued Development](#Continued-Development)
@@ -79,9 +78,6 @@ The demonstration video provides information on the application usage.
 
 ## Heroku Deployment URL:
 [CLick Here For Heroku Link.](https://run-tracker-aa4292a38872.herokuapp.com/)
-
-## YouTube Walkthrough Video:
-[Click Here to Watch.](URL)
 
 ## Screenshots:
 ### Figure 1. Login Page
