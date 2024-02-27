@@ -4,7 +4,7 @@
   "description": "Running Tracker.",
   "main": "server.js",
   "engines": {
-    "node": "v20.10.0",
+    "node": "20.11.1",
     "npm": "10.4.0"
   },
   "scripts": {
