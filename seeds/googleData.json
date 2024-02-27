@@ -1,0 +1,20 @@
+[
+    {
+      "googleId": "12345678901234567890",
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com"
+    },
+    {
+      "googleId": "09876543210987654321",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "jane.smith@example.com"
+    },
+    {
+      "googleId": "13579246801357924680",
+      "firstName": "Alice",
+      "lastName": "Johnson",
+      "email": "alice.johnson@example.com"
+    }
+  ]

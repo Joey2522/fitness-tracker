@@ -1,5 +1,6 @@
-const User = require('./User');
-const Stats = require('./Stats');
+const User = require('./user');
+const Google = require('./google');
+const Stats = require('./stats');
 
 User.hasMany(Stats, {
     foreignKey: 'runner_id'
@@ -9,4 +10,12 @@ Stats.belongsTo(User, {
     foreignKey: 'runner_id'
 });
 
-module.exports = { User, Stats };
+Google.hasMany(Stats, {
+    foreignKey: 'googleId'
+});
+
+Stats.belongsTo(Google, {
+    foreignKey: 'googleId'
+});
+
+module.exports = { User, Google, Stats };

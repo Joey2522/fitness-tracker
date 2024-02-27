@@ -1,3 +1,4 @@
+
 let signupBtn = document.getElementById('signupBtn');
 let signinBtn = document.getElementById('signinBtn');
 let firstNameBox = document.getElementById('firstNameBox');
@@ -9,6 +10,7 @@ let passwordText = document.getElementById('passwordText');
 
 let title = document.getElementById('title');
 let submitBtn = document.getElementById('submitBtn');
+let googleBtn = document.getElementById('googleBtn');
 
 let submitLogic = true;
 
@@ -110,4 +112,17 @@ const submitForm = async (event) => {
 
 submitBtn.onclick = (event) => {
     submitForm(event);
+};
+
+
+const googleAuth = async (event) => {
+    console.log('Google Auth funciton activated');
+
+    event.preventDefault();
+
+    window.location.href = '/google/auth';
+};
+
+googleBtn.onclick = (event) => {
+    googleAuth(event);
 };

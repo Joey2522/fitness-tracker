@@ -18,12 +18,23 @@ router.get('/', async (req, res) => {
 
 router.post('/', async (req, res) => {
     try {
+        console.log('POST REQUEST ACTIVATED');
         const statData = req.body;
+        console.log(statData);
+        console.log(req.user);
 
-        const newStat = await Stats.create(statData);
-
-        res.status(201).json({ message: 'Statistic created successfully', data: newStat});
-
+        if (req.user && req.user.authMethod === 'google') {
+            const newStat = await Stats.create({
+                google_id: req.user.googleId,
+                distance: statData.distance,
+                duration: statData.duration,
+                feeling: statData.feeling
+            });
+            res.status(201).json({ message: 'Statistic created successfully', data: newStat});
+        } else {
+            const newStat = await Stats.create(statData);
+            res.status(201).json({ message: 'Statistic created successfully', data: newStat});
+        }
     } catch (error) {
         console.error('Error creating new statistic', error);
         res.status(500).json({ error: 'Internal server error' });
