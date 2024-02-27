@@ -2,7 +2,7 @@ const sequelize = require('../config/connection');
 const { User, Google, Stats } = require('../models/');
 
 const userData = require('./userData.json');
-const googleData = require('./googleData.json');
+const googleData = require('./googleData.json')
 const runningData = require('./statsData.json');
 
 

@@ -37,14 +37,14 @@ Stats.init(
     runner_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'User',
+        model: 'user',
         key: 'id',
       },
     },
     google_id: {
       type: DataTypes.STRING,
       references: {
-        model: 'Google',
+        model: 'google',
         key: 'googleId',
       },
     }
