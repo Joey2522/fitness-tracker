@@ -40,6 +40,13 @@ Stats.init(
         model: 'User',
         key: 'id',
       },
+    },
+    google_id: {
+      type: DataTypes.STRING,
+      references: {
+        model: 'Google',
+        key: 'googleId',
+      },
     }
   },
   {

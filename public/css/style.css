@@ -147,6 +147,36 @@ input {
     transform: translateY(4px);
 }
 
+.googleBtn-field {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.googleBtn-field button {
+    flex-basis: 48%;
+    background: #FEF410;
+    color: black;
+    height: 40px;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 0 15 0 15;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.googleBtn-field button:hover {
+    background: #3c00a0;
+    color: whitesmoke;
+}
+
+.googleBtn-field button:active {
+    background-color: #06C9B7;
+    box-shadow: 0 5px #000000;
+    transform: translateY(4px);
+}
+
 @media (max-width: 1445px) {
     .welcome {
         top: 15%;

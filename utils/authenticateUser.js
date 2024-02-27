@@ -2,6 +2,14 @@ const User = require('../models/users');
 
 const authenticateUser = async (req, res, next) => {
     try {
+
+        if (req.isAuthenticated()) {
+
+            const authMethod = req.user.googleId ? 'google' : 'local'
+            req.user.authMethod = authMethod;
+            return next();
+        }
+
         if (!req.session || !req.session.userId) {
             throw new Error('User not authenticated');
         }
@@ -12,7 +20,7 @@ const authenticateUser = async (req, res, next) => {
             throw new Error('User not found');
         }
 
-        req.user = user;
+        req.user = { ...user.toJSON(), authMethod: 'session'};
 
         next();
     } catch (error) {

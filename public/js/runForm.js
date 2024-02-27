@@ -26,6 +26,8 @@ const submitRun = async (event) => {
         }
     });
 
+    console.log(response);
+
     if (response.ok) {
         const userData = await response.json();
         const userId = userData.id;

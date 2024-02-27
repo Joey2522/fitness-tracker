@@ -3,7 +3,11 @@
 
     <div class="container2">
     <header class="header">
-        <h1>Get Running, {{first_name}}!</h1>
+        {{#if loggedInWithGoogle}}
+            <h1>Get Running, {{firstName}}!</h1>   
+        {{else}}
+            <h1>Get Running, {{first_name}}!</h1>
+        {{/if}}
     </header>
         <div class="card-container">
 

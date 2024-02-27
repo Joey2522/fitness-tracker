@@ -1,7 +1,10 @@
 const router = require('express').Router();
 const withAuth = require('../utils/auth');
-const { User, Stats } = require('../models');
+const { User, Stats, Google } = require('../models');
 const authenticateUser = require('../utils/authenticateUser');
+require('../utils/googleAuth');
+const passport = require('../utils/googleAuth');
+
 
 
 router.get('/', async (req, res) => {
@@ -12,40 +15,78 @@ router.get('/', async (req, res) => {
 router.get('/running', authenticateUser, async (req, res) => {
         console.log('Redirected to /running');
         try {
-                const userId = req.user.id;
+                console.log('User:', req.user);
 
-                console.log('userId:', userId);
+                let userId;
+                console.log('authMethod', req.user.authMethod)
 
-                const userWithStats = await User.findByPk(userId, {
-                        include: Stats,
-                });
+                if (req.user.authMethod === 'google') {
+                        userId = req.user.googleId;
+                } else {
+                        userId = req.user.id;
+                }
+                console.log('UserId:', userId);
 
-                console.log('Data:', userWithStats);
+                let user;
 
-                if (userWithStats.stats) {
-                        userWithStats.stats.forEach((stat) => {
-                                console.log('Stats Data:', stat.dataValues);
+                if (req.user.authMethod === 'google') {
+                        user = await Google.findOne({ where: { googleId: req.user.googleId }, include: Stats });
+                        console.log('TEST THIS ONE', user)
+                } else {
+                        user = await User.findByPk(userId, {
+                                include: Stats,
                         });
                 }
 
-                if (!userWithStats) {
+                console.log('authMethod', req.user.authMethod)
+
+                if (!user) {
                         throw new Error('User not found');
                 }
 
-                
-                const { first_name } = userWithStats;
-                console.log('first name check:', first_name);
 
-                const statsData = userWithStats.stats;
+                console.log('User Data:', user);
 
-                console.log('Stats data:', statsData);
-
-                res.render('running', { first_name, statsData });
-                
+                if (req.user.authMethod === 'google') {
+                        const { firstName } = user;
+                        console.log('first name check:', firstName);
+                        const statsData = user.stats;
+                        console.log('Stats data:', statsData);
+                        
+                        res.render('running', { firstName, statsData, loggedInWithGoogle: req.user.authMethod === 'google' });
+                } else {
+                        const { first_name } = user;
+                        console.log('first name check:', first_name);
+                       
+                        const statsData = user.stats;
+                        console.log('Stats data:', statsData);
+                        res.render('running', { first_name, statsData, loggedInWithGoogle: req.user.authMethod === 'google' });
+                }                
         } catch (error) {
                 console.error('Error fetching stats:', error);
                 res.status(500).send('Error fetching stats data');
         }        
+});
+
+
+
+
+router.get('/google/auth', 
+    (req, res, next) => {
+        console.log('Google authentication route hit');
+        next(); 
+    },
+    passport.authenticate('google', { scope: ['email', 'profile'] })
+);
+
+router.get('/google/callback', passport.authenticate('google', {
+                successRedirect: '/running',
+                failureRedirect: '/auth/failure',
+                authMethod: 'google'
+}));
+
+router.get('/auth/failure', (req, res) => {
+        res.send('Google Authorization Failed. Please sign up with an email.')
 });
 
 module.exports = router;
